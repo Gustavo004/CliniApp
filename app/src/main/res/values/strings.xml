@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CliniApp</string>
+    <string name="TextoParaCuentaNueva">¿Ya tienes una cuenta?</string>
+    <string name="MensajeBienvenida">Bienvenido gusto verte otra vez</string>
+    <string name="TextoParaRegistar">Registro nuevo usuario</string>
+    <string name="btnRegistar">Registrar</string>
+    <string name="btnIrRegistar">Registarme</string>
+    <string name="prefs_file">com.example.cliniapp.PREFERENCE_FILE_KEY</string>
+
+    <string name="facebook_app_id">269789614465982</string>
+    <string name="fb_login_protocol_scheme">fb269789614465982</string>
+
+
+
+</resources>

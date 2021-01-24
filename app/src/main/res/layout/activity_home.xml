@@ -29,15 +29,15 @@
         android:id="@+id/EmailTextViewRegistroUsuario"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="80dp"
         android:text="@string/TextoParaCuentaNueva"
         android:textColor="@android:color/secondary_text_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/Topview"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Email" />
@@ -46,26 +46,26 @@
         android:id="@+id/ProvaiderTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
         android:text="@string/TextoParaCuentaNueva"
         android:textColor="@android:color/secondary_text_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/Topview"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="TextoProveedor" />
 
     <Button
         android:id="@+id/btnLogOut"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="424dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/round_bg"
@@ -74,9 +74,8 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProvaiderTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -84,15 +83,43 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="@string/MensajeBienvenida"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Topview" />
+
+    <ImageButton
+        android:id="@+id/btnListarHistoriaMedica"
+        android:layout_width="80dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginRight="236dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@mipmap/history" />
+
+    <ImageView
+        android:id="@+id/btnMapaClinicas"
+        android:layout_width="114dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/ubicacionclinica" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

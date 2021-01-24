@@ -1,11 +1,12 @@
-package com.example.cliniapp
+package com.example.cliniapp.UI
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.cliniapp.R
 import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_auth.*
 import kotlinx.android.synthetic.main.activity_home.*
 
 //Tipo de seguridad que le podemos dar a nuestra app;
@@ -36,6 +37,21 @@ class HomeActivty : AppCompatActivity() {
         prefs.apply()
 
 
+        //Mandando a llamar a la otra actividad Historia Medica ;
+        btnListarHistoriaMedica.setOnClickListener {
+            val intento1 = Intent(this, HistoriaMedicaActivity::class.java)
+            startActivity(intento1)
+        }
+
+        //Mandando a llamar a la otra actividad MapaClinica ;
+        btnMapaClinicas.setOnClickListener()
+        {
+
+            val irMapaClinica = Intent(this, ClinicaMapasActivity::class.java)
+            startActivity(irMapaClinica)
+        }
+
+
     }
 
     private fun SetUp(email: String, provider: String) {
@@ -57,10 +73,10 @@ class HomeActivty : AppCompatActivity() {
                 LoginManager.getInstance().logOut()
             }
 
-
             FirebaseAuth.getInstance().signOut()//Se deslogue la cuenta
             onBackPressed()//Vuelve a la pantalla anterior;
         }
+
 
     }
 

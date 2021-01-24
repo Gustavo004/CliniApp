@@ -1,11 +1,11 @@
-package com.example.cliniapp
+package com.example.cliniapp.UI
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
-import com.facebook.CallbackManager
+import com.example.cliniapp.R
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
 import com.facebook.login.LoginManager
@@ -13,12 +13,10 @@ import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_auth.*
-import java.security.Provider
 
 
 class AuthActivity : AppCompatActivity() {
@@ -74,7 +72,9 @@ class AuthActivity : AppCompatActivity() {
 
                     if (it.isSuccessful) {
                         //El correo siempre sera necesario nunca null
-                        ShowHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                        ShowHome(it.result?.user?.email ?: "",
+                            ProviderType.BASIC
+                        )
 
                     } else {
                         ShowAlert()
@@ -104,7 +104,9 @@ class AuthActivity : AppCompatActivity() {
                     //Si tod0 sale bien manda a la siguiente pantalla;
                     if (it.isSuccessful) {
                         //El correo siempre sera necesario nunca null
-                        ShowHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                        ShowHome(it.result?.user?.email ?: "",
+                            ProviderType.BASIC
+                        )
                     } else {
                         ShowAlert() //Si no muestra un mensaje de alerta;
                     }
@@ -228,7 +230,9 @@ class AuthActivity : AppCompatActivity() {
 
                             if (it.isSuccessful) {
                                 //El correo siempre sera necesario nunca null
-                                ShowHome(account.email ?: "", ProviderType.GOOGLE)
+                                ShowHome(account.email ?: "",
+                                    ProviderType.GOOGLE
+                                )
 
                             } else {
                                 ShowAlert()

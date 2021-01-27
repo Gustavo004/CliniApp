@@ -1,50 +1,53 @@
 package com.example.cliniapp.Models;
 
-import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.Date;
+import com.google.gson.annotations.SerializedName;
 
 public class HistoriaMedica  {
 
+    @SerializedName("temperaturaCorporal")
     private String temperaturaCorporal;
-    private Integer idHistoriaMedica;
-    private Integer idMedicamentos;
-    private  Date fecha_De_La_Historia_Medica;
-    private  String tipoSangre;
-    private Integer peso;
-    private  String pulso;
+
+    @SerializedName("idHistoriaMedica")
+    private int idHistoriaMedica;
+
+    @SerializedName("idMedicamentos")
+    private int idMedicamentos;
+
+    @SerializedName("fecha_De_La_Historia_Medica")
+    private String fecha_De_La_Historia_Medica;
+
+    @SerializedName("tipoSangre")
+    private String tipoSangre;
+
+    @SerializedName("peso")
+    private int peso;
+
+    @SerializedName("pulso")
+    private String pulso;
+
+    @SerializedName("presion")
     private String presion;
-    private Integer idDiagnostico;
-    private Integer dni;
 
+    @SerializedName("idDiagnostico")
+    private int idDiagnostico;
 
-    public HistoriaMedica(String temperaturaCorporal, Integer idHistoriaMedica, Integer idMedicamentos, Date fecha_De_La_Historia_Medica, String tipoSangre, Integer peso, String pulso, String presion, Integer idDiagnostico, Integer dni) {
-        this.temperaturaCorporal = temperaturaCorporal;
-        this.idHistoriaMedica = idHistoriaMedica;
-        this.idMedicamentos = idMedicamentos;
-        this.fecha_De_La_Historia_Medica = fecha_De_La_Historia_Medica;
-        this.tipoSangre = tipoSangre;
-        this.peso = peso;
-        this.pulso = pulso;
-        this.presion = presion;
-        this.idDiagnostico = idDiagnostico;
-        this.dni = dni;
-    }
-
+    @SerializedName("dni")
+    private int dni;
 
     public String getTemperaturaCorporal() {
         return temperaturaCorporal;
     }
 
-    public Integer getIdHistoriaMedica() {
+    public int getIdHistoriaMedica() {
         return idHistoriaMedica;
     }
 
-    public Integer getIdMedicamentos() {
+    public int getIdMedicamentos() {
         return idMedicamentos;
     }
 
-    public Date getFecha_De_La_Historia_Medica() {
+    public String getFecha_De_La_Historia_Medica() {
         return fecha_De_La_Historia_Medica;
     }
 
@@ -52,7 +55,7 @@ public class HistoriaMedica  {
         return tipoSangre;
     }
 
-    public Integer getPeso() {
+    public int getPeso() {
         return peso;
     }
 
@@ -64,11 +67,12 @@ public class HistoriaMedica  {
         return presion;
     }
 
-    public Integer getIdDiagnostico() {
+    public int getIdDiagnostico() {
         return idDiagnostico;
     }
 
-    public Integer getDni() {
+    public int getDni() {
         return dni;
     }
+
 }

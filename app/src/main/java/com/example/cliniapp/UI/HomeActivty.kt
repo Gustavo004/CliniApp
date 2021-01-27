@@ -4,9 +4,11 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cliniapp.Models.HistoriaMedica
 import com.example.cliniapp.R
 import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_home.*
 
 //Tipo de seguridad que le podemos dar a nuestra app;
@@ -37,11 +39,15 @@ class HomeActivty : AppCompatActivity() {
         prefs.apply()
 
 
-        //Mandando a llamar a la otra actividad Historia Medica ;
+
+         //Mandando a llamar a la otra actividad Historia Medica ;
         btnListarHistoriaMedica.setOnClickListener {
-            val intento1 = Intent(this, HistoriaMedicaActivity::class.java)
+            val intento1 = Intent(this, HMedicaActivity::class.java)
             startActivity(intento1)
         }
+
+
+
 
         //Mandando a llamar a la otra actividad MapaClinica ;
         btnMapaClinicas.setOnClickListener()
@@ -79,6 +85,9 @@ class HomeActivty : AppCompatActivity() {
 
 
     }
+
+
+
 
 
 }

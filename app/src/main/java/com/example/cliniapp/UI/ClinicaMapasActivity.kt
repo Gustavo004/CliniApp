@@ -60,8 +60,6 @@ class ClinicaMapasActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.O
     private var marcadorSANNA_CLINICA_SAN_BORJA:Marker?=null
 
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clinica_mapas)
@@ -162,7 +160,6 @@ class ClinicaMapasActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.O
         val SANNA_CLINICA_SAN_BORJA=LatLng(-12.092085,-77.008347)
 
 
-
         //Para la clinica Santa Maria;
         marcadorClinicaSantaMaria = mMap.addMarker(MarkerOptions().position(CLINICA_SANTA_MARIA).icon(BitmapDescriptorFactory.fromResource(R.drawable.clinicasantamarialogo)).alpha(1F).title("Clínica Santa Maria"))
         marcadorClinicaSantaMaria?.tag=0
@@ -234,13 +231,6 @@ class ClinicaMapasActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.O
         //Capturando el numero de clicks (Evento Click)
         mMap.setOnMarkerClickListener(this)
 
-
-
-
-
-
-
-
         //validar que el mapa y cordenadas hayan sido cargados;L
         if(validarPermisosUbicacion() ) {
 
@@ -252,6 +242,8 @@ class ClinicaMapasActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.O
 
         // Add a marker in Sydney and move the camera
     }
+
+
 
     override fun onMarkerClick(marcador: Marker?): Boolean {
 

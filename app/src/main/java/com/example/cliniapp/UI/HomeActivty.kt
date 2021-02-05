@@ -66,7 +66,13 @@ class HomeActivty : AppCompatActivity() {
         }
 
 
+        //Mandando a llamar el modulo de llamar clinicas ;
+        btnLlamarHospital.setOnClickListener()
+        {
 
+            val irLlamarHospital= Intent(this, LlamarClinicasActivity::class.java)
+            startActivity(irLlamarHospital)
+        }
 
 
 

@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -19,7 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UI.myHomeActiviyLayout"></activity>
+        <activity android:name=".UI.LlamarClinicasActivity"></activity>
+        <activity android:name=".UI.myHomeActiviyLayout" />
         <activity android:name=".UI.FragmentMainActivity" />
         <activity android:name=".UI.activity_main_layout" />
         <activity android:name=".Detalles" />

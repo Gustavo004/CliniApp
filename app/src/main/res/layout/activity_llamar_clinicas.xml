@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.LlamarClinicasActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Comunicate con nostoros "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnLlamarClinicaInternacional"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnLlamarJockeySalud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:srcCompat="@drawable/llamarclinicainternacionallogo" />
+
+    <ImageButton
+        android:id="@+id/btnLlamarJockeySalud"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:srcCompat="@drawable/clinicajockeyllamar" />
+
+    <ImageButton
+        android:id="@+id/btmLlamarGoodHope"
+        android:layout_width="156dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLlamarClinicaInternacional"
+        app:srcCompat="@drawable/goodhopellamado" />
+
+    <ImageButton
+        android:id="@+id/btnLlamarDelgado"
+        android:layout_width="160dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btmLlamarGoodHope"
+        app:layout_constraintTop_toBottomOf="@+id/btnLlamarJockeySalud"
+        app:srcCompat="@drawable/clinicadelgadollamadoo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

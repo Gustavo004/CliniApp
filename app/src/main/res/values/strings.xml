@@ -13,5 +13,46 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_clinica_mapas">Map</string>
 
+    <string name="DescripcionSobreLaApp">
+        Esta aplicacion nace debido al estado de emergencia a causa del Covid 19 en el Perú registrado el 6 de marzo de 2020 y
+        la necesidad de sistemizar historias medicas. Dando asi el origen a este proyecto
+        esta aplicación es el esfuerzo de un consorcio clínico que cuenta con un estándar de
+        historias médicas ya definidas en cualquier sistema informático o sistema de gestión hemos
+        podido acceder a esos datos y a base de ellos digitalizar dichos archivos, llevándolos así tanto a la nube
+        como a un sistema móvil que es el celular cabe resaltar que nuestro principal objetivo es poder
+        contar con una historia médica privada el cual tú eres el único dueño.
+
+    </string>
+
+
+    <string name="DescripcionHistoriaMedica">
+       Una historia médica es una recopilación de información acerca de un
+        paciente que se puede utilizar para comprender mejor cualquier problema de salud que pueda sufrir.
+        Hacer un historial médico es como tener una conversación. Una historia clínica o historia médica es una
+        colección de información de un paciente que proporciona una imagen de su actual estado de salud. Cuando la historia clínica de un paciente se hace correctamente, suministra al profesional médico hechos importantes que ayudarán a hacer un diagnóstico  y establecer el tratamiento más adecuado.
+    </string>
+
+    <string name="ComosehaceunaHistoriaMedica">
+        Una entrevista con el paciente es la forma más eficaz para obtener una historia clínica.
+        Básicamente consiste en una conversación entre el paciente y el médico.
+    </string>
+
+
+    <string name="PuedeSalvarlelavida">
+    En efecto tener una historia médica dentro de tu
+        dispositivo móvil nos facilita mucho el tema del papeleo ya
+        que solo nos bastaría un par de registros para saber exactamente
+        lo que tienes y así que el doctor pueda hacer mejor su trabajo en
+        cuanto al diagnóstico y el tratamiento de una enfermedad o padecimiento
+        o prevenir normales, sin mencionar también que nos ayuda muchísimo al
+        momento de querer hacer una operación ya que si no tienes los papeles a
+        las manos será muy difícil para el doctor saber qué es lo que exactamente tienes.
+
+    </string>
+
+
+
+
+
 
 </resources>

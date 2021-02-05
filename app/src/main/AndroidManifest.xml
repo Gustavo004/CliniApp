@@ -19,7 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UI.HMedicaActivity"></activity>
+        <activity android:name=".UI.myHomeActiviyLayout"></activity>
+        <activity android:name=".UI.FragmentMainActivity" />
+        <activity android:name=".UI.activity_main_layout" />
+        <activity android:name=".Detalles" />
+        <activity android:name=".UI.activty_main_Layout" />
+        <activity android:name=".UI.HMedicaActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

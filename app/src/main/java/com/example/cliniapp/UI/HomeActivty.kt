@@ -48,7 +48,6 @@ class HomeActivty : AppCompatActivity() {
 
 
 
-
         //Mandando a llamar a la otra actividad MapaClinica ;
         btnMapaClinicas.setOnClickListener()
         {
@@ -56,6 +55,19 @@ class HomeActivty : AppCompatActivity() {
             val irMapaClinica = Intent(this, ClinicaMapasActivity::class.java)
             startActivity(irMapaClinica)
         }
+
+
+        //Mandando a llamar a la otra actividad Ayuda ;
+        btnAyuda.setOnClickListener()
+        {
+
+            val irAyuda= Intent(this, myHomeActiviyLayout::class.java)
+            startActivity(irAyuda)
+        }
+
+
+
+
 
 
     }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioBlankFragment">
+
+    <fragment
+        android:id="@+id/inicioBlankFragment"
+        android:name="com.example.cliniapp.InicioBlankFragment"
+        android:label="fragment_inicio_blank"
+        tools:layout="@layout/fragment_inicio_blank" >
+        <action
+            android:id="@+id/pantalla1Fragment"
+            app:destination="@id/pantalla1Fragment" />
+        <action
+            android:id="@+id/pantalla2Fragment"
+            app:destination="@id/pantalla2Fragment" />
+        <action
+            android:id="@+id/action_inicioBlankFragment_to_pantalla3Fragment"
+            app:destination="@id/pantalla3Fragment" />
+        <action
+            android:id="@+id/action_inicioBlankFragment_to_pantalla4Fragment"
+            app:destination="@id/pantalla4Fragment" />
+        <action
+            android:id="@+id/action_inicioBlankFragment_to_pantalla5Fragment"
+            app:destination="@id/pantalla5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla1Fragment"
+        android:name="com.example.cliniapp.Pantalla1Fragment"
+        android:label="fragment_pantalla1"
+        tools:layout="@layout/fragment_pantalla1" />
+    <fragment
+        android:id="@+id/pantalla2Fragment"
+        android:name="com.example.cliniapp.Pantalla2Fragment"
+        android:label="fragment_pantalla2"
+        tools:layout="@layout/fragment_pantalla2" />
+    <fragment
+        android:id="@+id/pantalla3Fragment"
+        android:name="com.example.cliniapp.Pantalla3Fragment"
+        android:label="fragment_pantalla3"
+        tools:layout="@layout/fragment_pantalla3" />
+    <fragment
+        android:id="@+id/pantalla4Fragment"
+        android:name="com.example.cliniapp.Pantalla4Fragment"
+        android:label="fragment_pantalla4"
+        tools:layout="@layout/fragment_pantalla4" />
+    <fragment
+        android:id="@+id/pantalla5Fragment"
+        android:name="com.example.cliniapp.Pantalla5Fragment"
+        android:label="fragment_pantalla5"
+        tools:layout="@layout/fragment_pantalla5" />
+</navigation>

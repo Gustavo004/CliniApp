@@ -10,6 +10,9 @@
     <color name="ColorUsadoPrimary">#0099ff</color>
     <color name="colorUsadoPrimaryDark">#0099ff</color>
     <color name="colorUsadoAccent">#D81B60</color>
+    <!-- Colores aplicados para boton ayuda -->
+    <string name="colorBotonesModoAyuda">#fff59d</string>
+
 
 
 

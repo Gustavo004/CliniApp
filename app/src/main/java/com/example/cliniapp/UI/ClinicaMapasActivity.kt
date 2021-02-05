@@ -257,10 +257,10 @@ class ClinicaMapasActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.O
             Toast.makeText(this,"Se han dado "+" " +NumeroClicks.toString()+"clicks",Toast.LENGTH_LONG).show()
         }
 
-
-
         return false
     }
+
+
 
 
     //ver si el usuario tiene los permisos o hace falta pedirlo al usuario;
@@ -349,6 +349,7 @@ class ClinicaMapasActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.O
         super.onPause()
         detenerActualizacionDeUbicacion()
     }
+
 
 
 
